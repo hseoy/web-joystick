@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": ["off"]
+  }
+}
